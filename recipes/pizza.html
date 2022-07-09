@@ -6,35 +6,75 @@
 
     <meta charset="UTF-8">
     <title>Pizza</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+    </style>
 </head>
 
 <body>
     <h1>Pizza</h1>
     <img src="https://media4.giphy.com/media/4ayiIWaq2VULC/giphy.gif">
+    <br>
     <h6>Pizza is one of the most popular dishes in the world</h6>
     <p> It is made with a dough cooked along with tomato sauce cheese and many combinations of Ingredients</p>
-
+    <br>
     <h2>Ingredients</h2>
-    <ul>
+    <ul class="ingredients">
         <li>Tomato Sauce</li>
+        <br>
         <li>Cheese</li>
+        <br>
         <li>flour</li>
+        <br>
         <li>Pizza Dough</li>
     </ul>
-
+    <br>
     <h2>Steps</h2>
+    <br>
     <ol>
         <h3>Step 1</h3>
         <li>Kneed the dough to a firm state</li>
+        <br>
         <h3>Step 2</h3>
         <li>Put tomato sauces and the cheese</li>
+        <br>
         <h3>Step 3</h3>
         <li>Cook in the oven or bake it in 475 degreess in 15 minutes</li>
     </ol>
+    <br>
+    <br>
+    <br>
+    <ul class="containerLinks">
+        <a class="top" href="pizza.html">Back to top</a> <br>
+        <a class="back" href="../index.html">Back to Main Menu</a>
+    </ul>
+    <script>
+        const topLink = document.querySelector('.top')
+        const backLink = document.querySelector('.back')
+        topLink.addEventListener('mouseover', topIn)
+        topLink.addEventListener('mouseout', topOut)
 
-    <a href="pizza.html">Back to top</a> <br>
-    <a href="../index.html">Back to Main Menu</a>
+        function topIn() {
+            backLink.style.opacity = '0'
+        }
 
+        function topOut() {
+            backLink.style.opacity = '1'
+        }
+
+        backLink.addEventListener('mouseover', backIn)
+        backLink.addEventListener('mouseout', backOut)
+
+        function backIn() {
+            topLink.style.opacity = '0'
+        }
+
+        function backOut() {
+            topLink.style.opacity = '1'
+        }
+    </script>
 </body>
 
 </html>

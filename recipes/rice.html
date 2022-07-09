@@ -6,32 +6,72 @@
 
     <meta charset="UTF-8">
     <title>Pizza</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+    </style>
 </head>
 
 <body>
     <h1>Rice</h1>
     <img src="https://media0.giphy.com/media/l4pThZZYLwIVfZTC8/giphy.gif">
+    <br>
     <h6>Rice is one of the most consumed foods in the world</h6>
     <p>rice, (Oryza sativa), edible starchy cereal grain and the grass plant (family Poaceae) by which it is produced.</p>
-
+    <br>
     <h2>Ingredients</h2>
-    <ul>
+    <ul class="ingredients">
         <li>rice</li>
+        <br>
         <li>water</li>
     </ul>
-
+    <br>
 
     <h2>Steps</h2>
+    <br>
     <ol>
         <h3>Step 1</h3>
         <li>put 3 cups of rice and double the amount of water</li>
+        <br>
         <h3>Step 2</h3>
         <li>rinse the rice</li>
+        <br>
         <h3>Step 3</h3>
         <li>cook in either a rice cooker or stove top for 30 minuted</li>
     </ol>
-    <a href="rice.html">Back to top</a> <br>
-    <a href="../index.html">Back to Main Menu</a>
+    <br>
+    <br>
+    <br>
+    <ul class="containerLinks">
+        <a class="top" href="rice.html">Back to top</a> <br>
+        <a class="back" href="../index.html">Back to Main Menu</a>
+    </ul>
+    <script>
+        const topLink = document.querySelector('.top')
+        const backLink = document.querySelector('.back')
+        topLink.addEventListener('mouseover', topIn)
+        topLink.addEventListener('mouseout', topOut)
+
+        function topIn() {
+            backLink.style.opacity = '0'
+        }
+
+        function topOut() {
+            backLink.style.opacity = '1'
+        }
+
+        backLink.addEventListener('mouseover', backIn)
+        backLink.addEventListener('mouseout', backOut)
+
+        function backIn() {
+            topLink.style.opacity = '0'
+        }
+
+        function backOut() {
+            topLink.style.opacity = '1'
+        }
+    </script>
 
 </body>
 

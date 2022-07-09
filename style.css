@@ -1,0 +1,72 @@
+* {
+    background-color: Black;
+    box-sizing: border-box;
+    list-style-type: disc;
+    color: wheat;
+}
+
+.title {
+    color: coral;
+    transform: rotate(-25deg);
+    position: relative;
+    text-align: center;
+    right: 22rem;
+    top: 7rem;
+    font-family: 'Lobster', cursive;
+}
+
+h1 {
+    color: coral;
+    font-family: 'Lobster', cursive;
+    text-shadow: 1px 1px 0 white;
+}
+
+h2 {
+    color white;
+    text-shadow: 0 0 10px white;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+}
+
+.gordy {
+    display: block;
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 750px;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    text-shadow: 1px 1px 0 rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Carter One', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links {
+    list-style-type: none;
+    text-align: center;
+}
+
+.ingredients>li {
+    list-style-type: none;
+}
